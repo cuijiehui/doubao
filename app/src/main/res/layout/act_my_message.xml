@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <RelativeLayout
+        android:id="@+id/relative_register_title"
+        android:background="@color/app_bottom_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+
+        <TextView
+            android:id="@+id/tv_recharge_title"
+            android:text="个人中心"
+            style="@style/title_style"
+            android:textColor="@color/color_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_register_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_recharge_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:background="@color/color_font"
+        android:layout_below="@+id/relative_register_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rel_user_img"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/tv_img"
+                style="@style/mine_setting_text_style"
+                android:text="头像"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <com.xinspace.csevent.app.view.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/img_userhead"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/profile"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="3dp"
+                android:layout_toLeftOf="@+id/img_back"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_back"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/rel_user_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/mine_setting_text_style"
+                android:text="昵称"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_nickname"
+                style="@style/mine_setting_text_style"
+                android:text="我的昵称"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_back2"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cccccc" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_user_real_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey"
+            >
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/mine_setting_text_style"
+                android:text="真实姓名"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_real_name"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back6"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_back6"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon"
+                />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rel_user_id"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/mine_setting_text_style"
+                android:text="ID"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_id"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back3"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                />
+
+            <ImageView
+                android:id="@+id/img_back3"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/rel_user_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/mine_setting_text_style"
+                android:text="绑定手机号"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_phone"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back4"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text=""
+                />
+
+            <ImageView
+                android:id="@+id/img_back4"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_font"
+        android:layout_below="@+id/lin_1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_user_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/mine_setting_text_style"
+                android:text="收货地址管理"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_user_address"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back5"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_back5"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/rel_edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:text="重置登录密码" />
+
+            <TextView
+                android:id="@+id/tv_edit_pwd"
+                style="@style/mine_setting_text_style"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/img_back7" />
+
+            <ImageView
+                android:id="@+id/img_back7"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:background="#cccccc" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_door_dor_index"
+        android:layout_below="@+id/lin_2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_bt_state_change_grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            style="@style/mine_setting_text_style"
+            android:gravity="center_vertical"
+            android:text="设置社区为默认首页"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_compat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:theme="@style/Color1SwitchStyle"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/set_door_dor_index"
+        android:layout_marginTop="33dp"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/app_bottom_color"
+        />
+
+
+</RelativeLayout>

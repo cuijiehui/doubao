@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_font"
+    >
+
+    <GridView
+        android:id="@+id/gv_screen"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:numColumns="3"
+        >
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_below="@+id/gv_screen"
+        />
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="取消筛选"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="确定"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/app_bottom_color"
+                android:layout_alignParentRight="true"
+                android:textSize="16dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="选择分类"
+        android:gravity="center"
+        android:layout_below="@+id/tv_line"
+        android:textSize="14dp"
+        android:textColor="#999999"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_type"
+        android:layout_above="@+id/lin_bottom"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            />
+
+
+
+        <com.xinspace.csevent.shop.view.CustomMenuListView
+            android:id="@+id/listMenu"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:dividerHeight="1dp"
+            android:gravity="center"
+            android:layout_below="@+id/tv_line2"
+            >
+
+        </com.xinspace.csevent.shop.view.CustomMenuListView>
+
+
+        <TextView
+            android:id="@+id/tv_line1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#eeeeee"
+            android:layout_toRightOf="@+id/listMenu"
+            android:layout_below="@+id/tv_line2"
+            />
+
+        <com.xinspace.csevent.shop.view.CustomMenuListView
+            android:id="@+id/listContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_line1"
+            android:background="@color/color_font"
+            android:layout_below="@+id/tv_line2"
+            >
+
+        </com.xinspace.csevent.shop.view.CustomMenuListView>
+    </RelativeLayout>
+</RelativeLayout>

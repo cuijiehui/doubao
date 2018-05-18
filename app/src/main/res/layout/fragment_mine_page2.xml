@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_mine_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".ui.activity.AwardsRecordActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_mine_login"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/icon_my_top">
+
+                <com.xinspace.csevent.app.view.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="3dp"
+                    android:layout_centerInParent="true"
+                    />
+
+                <!-- 账号信息-->
+                <RelativeLayout
+                    android:id="@+id/ll_profile_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_mine_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="拾得用户"
+                        android:textColor="@color/color_register_edit_background"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tv_mine_integral"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mine_tel"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="剩余0积分/0元宝"
+                        android:textColor="@color/color_register_edit_background"
+                        android:textSize="15sp"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/bt_mine_charge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@+id/tv_mine_integral"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/selector_bt_state_change_yellow"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/mine_charge_text"
+                        android:textColor="@color/color_font"
+                        android:textSize="13dp"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_sale_log"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <ImageView
+                    android:id="@+id/img_sale_log"
+                    style="@style/mine_setting_icon_style"
+                    android:src="@drawable/icon_award" />
+
+                <TextView
+                    android:id="@+id/tv_sale_log"
+                    style="@style/mine_setting_text_style"
+                    android:layout_toRightOf="@+id/img_sale_log"
+                    android:text="购买记录" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@color/color_font"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rel_mine_snatch"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bt_state_change_grey">
+
+                    <ImageView
+                        android:id="@+id/img_snatch_log"
+                        style="@style/mine_setting_icon_style"
+                        android:src="@drawable/icon_santch" />
+
+                    <TextView
+                        android:id="@+id/tv_snatch_log"
+                        style="@style/mine_setting_text_style"
+                        android:layout_toRightOf="@+id/img_snatch_log"
+                        android:text="夺宝记录" />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="44dp"
+                    android:background="#eeeeee" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_award_log"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bt_state_change_grey">
+
+                    <ImageView
+                        android:id="@+id/img_award_log"
+                        style="@style/mine_setting_icon_style"
+                        android:src="@drawable/icon_award" />
+
+                    <TextView
+                        android:id="@+id/tv_award_log"
+                        style="@style/mine_setting_text_style"
+                        android:layout_toRightOf="@+id/img_award_log"
+                        android:text="中奖记录" />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="44dp"
+                    android:background="#eeeeee" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:background="@color/color_register_edit_background"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rel_mine_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bt_state_change_grey"
+                    android:visibility="gone"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_order_log"
+                        style="@style/mine_setting_icon_style"
+                        android:src="@drawable/icon_bask_order" />
+
+                    <TextView
+                        android:id="@+id/tv_order_log"
+                        style="@style/mine_setting_text_style"
+                        android:layout_toRightOf="@+id/img_order_log"
+                        android:text="我的晒单" />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="44dp"
+                    android:background="#eeeeee" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_my_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bt_state_change_grey">
+
+                    <ImageView
+                        android:id="@+id/img_my_address"
+                        style="@style/mine_setting_icon_style"
+                        android:src="@drawable/icon_my_address" />
+
+                    <TextView
+                        android:id="@+id/tv_my_address"
+                        style="@style/mine_setting_text_style"
+                        android:layout_toRightOf="@+id/img_my_address"
+                        android:text="收货地址" />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_call_center"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_bt_state_change_grey"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/img_call_center"
+                    style="@style/mine_setting_icon_style"
+                    android:src="@drawable/icon_callcenter" />
+
+                <TextView
+                    android:id="@+id/tv_call_center"
+                    style="@style/mine_setting_text_style"
+                    android:layout_toRightOf="@+id/img_call_center"
+                    android:text="客服中心" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rel_my_setting"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <ImageView
+                    android:id="@+id/img_my_setting"
+                    style="@style/mine_setting_icon_style"
+                    android:src="@drawable/icon_setting" />
+
+                <TextView
+                    android:id="@+id/tv_my_setting"
+                    style="@style/mine_setting_text_style"
+                    android:layout_toRightOf="@+id/img_my_setting"
+                    android:text="设置" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

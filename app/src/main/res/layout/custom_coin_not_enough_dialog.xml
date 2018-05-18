@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tv_bg_shape"
+        android:layout_height="260dp" />
+    <ImageView
+        android:id="@+id/gift_box"
+        android:layout_width="120dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/face_dialog_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp" />
+    <ImageView
+        android:id="@+id/iv_dialog_pity"
+        android:layout_width="120dp"
+        android:src="@drawable/jifen_not_enough"
+        android:layout_below="@+id/gift_box"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/huojiang_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_font_hese"
+        android:text="@string/dialog_coin_not_enough"
+        android:layout_below="@+id/iv_dialog_pity"
+        />
+    <Button
+        android:layout_below="@+id/huojiang_text"
+        android:id="@+id/bt_go_to_charge"
+        android:layout_width="150dp"
+        android:padding="10dp"
+        android:background="@drawable/selector_bt_state_change"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/dialog_go_to_charge"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

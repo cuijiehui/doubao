@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/award_bg_dialog"
+        >
+
+        <TextView
+            android:id="@+id/tv_recharge_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="请选择兑换/充值内容"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_recharge_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:layout_below="@+id/tv_recharge_title"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_recharge_line"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+
+            <RelativeLayout
+                android:id="@+id/rel_exchange_integral"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_integral"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_integral"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/iv_integral"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="兑换积分"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:textSize="16dp"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_recharge_gold"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:clickable="true"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_gold"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_gold"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/iv_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="充值元宝"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:textSize="16dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

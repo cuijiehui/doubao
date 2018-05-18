@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    >
+
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:id="@+id/relative_payment_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/app_bottom_color">
+
+        <TextView
+            android:id="@+id/tv_payment_title"
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="社区缴费"
+            android:textColor="@color/color_register_edit_background" />
+
+        <LinearLayout
+            android:id="@+id/ll_payment_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_payment_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_pay_water"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_bt_state_change_grey">
+
+        <ImageView
+            android:id="@+id/img_pay_water"
+            style="@style/mine_setting_icon_style"
+            android:src="@drawable/icon_pay_water"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_water"
+            style="@style/mine_setting_text_style"
+            android:layout_toRightOf="@+id/img_pay_water"
+            android:text="水费" />
+
+        <ImageView
+            style="@style/mine_go_into_style"
+            android:src="@drawable/go_into_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_energy_charge"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/img_energy_charge"
+                style="@style/mine_setting_icon_style"
+                android:src="@drawable/icon_energy_charge"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_energy_charger"
+                style="@style/mine_setting_text_style"
+                android:layout_toRightOf="@+id/img_energy_charge"
+                android:text="电费" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:background="#eeeeee" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_fuel_gas"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/img_fuel_gas"
+                style="@style/mine_setting_icon_style"
+                android:src="@drawable/icon_fuel_gas"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_fuel_gas"
+                style="@style/mine_setting_text_style"
+                android:layout_toRightOf="@+id/img_fuel_gas"
+                android:text="燃气费" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_parking_charge"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/img_parking_charge"
+                style="@style/mine_setting_icon_style"
+                android:src="@drawable/icon_parking_charge"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_parking_charge"
+                style="@style/mine_setting_text_style"
+                android:layout_toRightOf="@+id/img_parking_charge"
+                android:text="停车费" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="44dp"
+            android:background="#eeeeee" />
+
+        <RelativeLayout
+            android:id="@+id/rel_property_fee"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/img_property_fee"
+                style="@style/mine_setting_icon_style"
+                android:src="@drawable/icon_property_fee"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_property_fee"
+                style="@style/mine_setting_text_style"
+                android:layout_toRightOf="@+id/img_property_fee"
+                android:text="物业费" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

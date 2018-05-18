@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_font"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:id="@+id/rel_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_marginLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="#cccccc"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.xinspace.csevent.app.view.CircleImageView.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_user_img"
+                android:layout_below="@+id/tv_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/profile"
+                app:civ_border_color="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:background="#cccccc"
+                android:layout_below="@+id/iv_user_img"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/rel_content_left"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_crowd_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期号"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_crowd_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抽奖时间"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:text="参与:"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_duobao_record_num"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textColor="#ee5848"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="次"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:id="@+id/tv_part_time"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

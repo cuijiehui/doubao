@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_duobao_record_title"
+        android:background="@color/color_app_base_color_grey"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_duobao_record_title"
+            android:text="@string/duobao_record_title"
+            style="@style/title_style"
+            android:textColor="@color/color_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_duobao_record_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_address_edit_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_duobao_record_listview"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relative_duobao_record_title"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_setting_title"
+        android:background="@color/app_bottom_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+
+        <TextView
+            android:id="@+id/tv_setting_title"
+            android:text="设置"
+            style="@style/title_style"
+            android:textColor="@color/color_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_setting_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_recharge_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relative_setting_title"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_faq"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/tv_faq"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/img_snatch_log"
+                android:text="常见问题" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_font"
+            android:layout_marginTop="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_version_message"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    style="@style/mine_setting_text_style"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_snatch_log"
+                    android:text="版本信息" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="44dp"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:id="@+id/rel_sweepstakes_rules"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bt_state_change_grey"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_sweepstakes_rules"
+                    style="@style/mine_setting_text_style"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_snatch_log"
+                    android:text="抽奖规则" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <TextView
+                android:id="@+id/tv_clear_cache"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/img_snatch_log"
+                android:text="清除缓存" />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_log_out"
+        android:layout_below="@+id/lin_user_num"
+        android:layout_marginTop="20dp"
+        android:text="退出登录"
+        android:textSize="18sp"
+        android:textColor="@color/color_font"
+        android:background="@drawable/selector_bt_state_change"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

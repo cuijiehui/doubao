@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="en"
+    >
+    <string-array name="relative">
+        <item>朕</item>
+        <item>本宫</item>
+        <item>本宝宝</item>
+        <item>亲爱的</item>
+        <item>小甜心</item>
+        <item>父皇</item>
+        <item>母后</item>
+    </string-array>
+    <string-array name="income">
+        <item>2000以下</item>
+        <item>2000~4000</item>
+        <item>4000~6000</item>
+        <item>6000~10000</item>
+        <item>10000~20000</item>
+        <item>20000以上</item>
+    </string-array>
+    <string-array name="interest">
+        <item>数码产品</item>
+        <item>日用品</item>
+        <item>服饰</item>
+        <item>通讯</item>
+        <item>汽车</item>
+    </string-array>
+
+    <string-array name="unit_add_items">
+        <item>扫一扫</item>
+        <item>添加社区</item>
+    </string-array>
+</resources>

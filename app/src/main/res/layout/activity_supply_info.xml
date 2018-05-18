@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的页面补充个人信息-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/background"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_supply_info_title"
+        android:background="@drawable/main_page_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_supply_info_title"
+            android:text="添加完善资料"
+            style="@style/title_style"
+            android:textColor="@color/app_base_text_color_deep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_supply_info_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_supply_info_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_supply_info_name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_supply_info_title"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_name"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="昵   称:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_supply_info_name"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:layout_weight="8"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_supply_info_birthday"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_supply_info_name"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_birthday"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="生   日:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_supply_info_birthday1"
+            android:background="@null"
+            android:text="点击设置生日"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_supply_info_email"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_supply_info_birthday"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_email"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="邮   箱:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_supply_info_email"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_supply_info_gender"
+        android:layout_below="@+id/ll_supply_info_email"
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_gender"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="性   别:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/et_supply_info_gender"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/ib_supply_info_man"
+            android:src="@drawable/man1"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_register_gender_man_shape_pressed"
+            android:layout_width="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:id="@+id/ib_supply_info_woman"
+            android:src="@drawable/woman1"
+            android:layout_weight="3"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_register_gender_woman_shape_unpressed"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_supply_info_income"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_supply_info_gender"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_income"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="收   入:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/sp_income"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            android:entries="@array/income"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_supply_info_interest"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_supply_info_income"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_info_interest"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="感兴趣的产品:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/sp_interest"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            android:entries="@array/interest"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_supply_info_my_address"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/ll_supply_info_interest"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="收货地址管理:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/go_into_icon"
+            style="@style/mine_go_into_style"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_supply_info_commit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="确定"
+        android:textSize="18sp"
+        android:textColor="@color/color_font"
+        android:background="@drawable/selector_bt_state_change"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+
+
+</RelativeLayout>

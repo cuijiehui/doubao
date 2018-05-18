@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_affiche_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#666666"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/item_affiche_shape"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_affiche_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="收水电费了收水电费了收水电"
+            android:textSize="18dp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_affiche_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="收水电费了收水电费了收水电费了收水电费了"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_affiche_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/advertisement_loading"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="10dp"
+            android:background="#c9c9ce"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_read_all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/tv_read_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerVertical="true"
+                android:text="阅读全文"
+                android:layout_marginLeft="10dp"
+                android:textColor="#333333"
+                />
+
+            <ImageView
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+
+
+        </RelativeLayout>
+        
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        
+    </LinearLayout>
+</LinearLayout>

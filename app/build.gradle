@@ -1,0 +1,176 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.0'
+    //下面两行代码能起死回生
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.xinspace.csevent"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 41
+        versionName "1.0.82"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        config {
+            keyAlias 'androiddebugkey'
+            storeFile file('D:/APK')
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    /**
+     * 百度地图与linphone
+     *
+     */
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+
+
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+    }
+
+    dexOptions {
+        dexInProcess true
+        preDexLibraries true
+        javaMaxHeapSize "4g"//越大越好
+        //incremental true
+        jumboMode = true
+    }
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+        lintOptions { checkReleaseBuilds false }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile('com.zhy:base-rvadapter:3.0.3') {
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+    //volley网络请求
+    compile files('libs/volley.jar')
+    //GOSN解析
+    compile files('libs/gson-2.5.jar')
+    //加载图片开源库
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    //afinal开源库
+    compile files('libs/afinal_0.5.1_bin.jar')
+    //个推jar
+    compile files('libs/GetuiExt-2.0.3.jar')
+    //友盟数据分析jar
+//    compile files('libs/umeng-analytics-v5.6.4.jar')
+    //下拉刷新开源库
+    compile project(':PulToRefreshLibrary')
+    compile project(':push')
+
+    //侧滑回到上级页面
+    //支付宝支付
+    compile files('libs/alipaySdk-20170725.jar')
+    compile files('libs/tbs_sdk_thirdapp_v2.4.0.1073_36840_sharewithdownload_obfs_20161011_194834.jar')
+    compile files('libs/fastjson-1.2.5.jar')
+    //指示器indicator
+    compile project(':indicatorlibrary')
+    compile files('libs/okhttp-2.7.0.jar')
+    compile files('libs/android-junit-report-1.5.8.jar')
+    //监控内存泄漏
+    //三方轮播图
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/MobTools-2017.0412.1554.jar')
+    compile files('libs/ShareSDK-Wechat-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.8.3.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.8.3.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.7.jar')
+    compile files('libs/ShareSDK-QQ-2.7.7.jar')
+    compile files('libs/ShareSDK-Core-2.7.7.jar')
+    compile files('libs/umeng-common-1.5.1.jar')
+    compile files('libs/umeng-debug-1.0.0.jar')
+    //微信支付
+    compile files('libs/libammsdk.jar')
+
+    //底部导航
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.zhy:okhttputils:2.3.8'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jude:rollviewpager:1.2.9'
+    compile 'com.yinglan.alphatabs:library:1.0.8'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //ButterKnife
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+
+    //Glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //BRVAH recyclerView的封装框架
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+
+    //二维码框架
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+
+    //andriod M 权限框架
+    compile 'pub.devrel:easypermissions:1.0.0'
+
+    //WheelPicker
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    //CardView
+    compile 'com.android.support:cardview-v7:25.2.0'
+
+    compile 'com.afollestad.material-dialogs:core:0.9.1.0'
+    compile 'com.afollestad.material-dialogs:commons:0.9.1.0'
+    //下拉刷新
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+    //弹窗
+    compile 'com.github.pinguo-zhouwei:CustomPopwindow:2.1.1'
+
+    testCompile 'junit:junit:4.12'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
+
+
+}
+
+
+

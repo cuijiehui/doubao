@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_convert_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_bottom_color">
+
+        <TextView
+            android:id="@+id/tv_convert_detail_title"
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="预约看房"
+            android:textColor="@color/color_font" />
+
+        <LinearLayout
+            android:id="@+id/ll_order_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_convert_detail_back"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="#00ffffff"
+                android:src="@drawable/bt_back" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/relative_convert_detail_title"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/rel_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/iv_icon_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_order_time"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/mine_setting_text_style"
+                android:text="昵称"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/iv_icon_time"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                style="@style/mine_setting_text_style"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back1"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/img_back1"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/rel_order_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_order_name"
+                />
+
+
+            <EditText
+                android:id="@+id/ed_user_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back2"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:hint="请输入姓名"
+                />
+
+            <ImageView
+                android:id="@+id/img_back2"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_order_tel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_bt_state_change_grey">
+
+            <ImageView
+                android:id="@+id/iv_icon_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_order_tel"
+                />
+
+
+            <EditText
+                android:id="@+id/ed_order_tel"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/img_back3"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#ffffff"
+                android:layout_toRightOf="@+id/iv_icon_tel"
+                android:gravity="right|center_vertical"
+                android:maxLength="11"
+                android:inputType="number"
+                android:singleLine="true"
+                android:hint="请输入联系方式"
+                />
+
+            <ImageView
+                android:id="@+id/img_back3"
+                style="@style/mine_go_into_style"
+                android:src="@drawable/go_into_icon" />
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#cccccc" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/lin_book_tel"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="6"
+            android:background="@color/app_bottom_color"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_book_tel"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lin_lease_book"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#feca2e"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_lease_book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约看房"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

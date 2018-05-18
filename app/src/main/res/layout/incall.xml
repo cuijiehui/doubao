@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/fragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+
+        <TableLayout
+            android:id="@+id/calls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingTop="40dp" />
+
+        <fragment
+            android:id="@+id/status"
+            android:name="org.linphone.StatusFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/status"
+            />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/switchCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/content_description_switch_camera"
+        android:src="@drawable/switch_camera"
+        android:visibility="invisible" />
+
+    <org.linphone.ui.Numpad
+        android:id="@+id/numpad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/dialer_alt_background"
+        android:contentDescription="@string/content_description_numpad"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:layout_above="@+id/vp_video"
+        android:layout_marginBottom="15dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/routeBluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/route_bluetooth_off"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="@string/button_bluetooth"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/routeReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/route_receiver_off"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="@string/button_receiver"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/options_transfer"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="@string/button_transfer"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/routeSpeaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/route_speaker_off"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="@string/button_speaker"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/addCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@drawable/options_add_call_alt"
+                android:gravity="center"
+                android:paddingTop="40dp"
+                android:text="@string/button_add_call"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/video"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/video_off"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/videoInProgress"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:visibility="gone"
+                >
+
+                <ImageView
+                    android:id="@+id/micro"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/micro_on"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/speaker"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/speaker_off"
+                    android:layout_centerInParent="true"
+                     />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:id="@+id/hangUp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/icon_refuse"
+                    android:contentDescription="@string/content_description_hang_up"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/audioRoute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/routes"
+                android:gravity="center"
+                android:paddingTop="45dp"
+                android:text="@string/button_route"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/options"
+                android:gravity="center"
+                android:paddingTop="45dp"
+                android:text="@string/button_options"
+                android:textColor="@drawable/text_incall_button_color"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/pause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/pause_off"
+                android:contentDescription="@string/content_description_pause"
+                android:visibility="invisible"
+                />
+
+            <TextView
+                android:id="@+id/conference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/conference"
+                android:contentDescription="@string/content_description_conference"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/dialer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/dialer_alt"
+                android:contentDescription="@string/content_description_dialer"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/vp_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/icon_video_bottom"
+        android:scaleType="fitEnd"
+        />
+
+</RelativeLayout>

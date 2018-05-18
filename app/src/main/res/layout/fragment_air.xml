@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ShopFragment">
+
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:id="@+id/relative_shop_title"
+        android:layout_width="match_parent"
+        android:background="@color/app_bottom_color"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_shop_title"
+            android:text="空港云"
+            style="@style/title_style"
+            android:textColor="@color/color_register_edit_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_air"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_shop_title"
+        ></WebView>
+
+
+</RelativeLayout>

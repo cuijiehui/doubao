@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Duobao.iml" filepath="$PROJECT_DIR$/Duobao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PulToRefreshLibrary/PulToRefreshLibrary.iml" filepath="$PROJECT_DIR$/PulToRefreshLibrary/PulToRefreshLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/indicatorlibrary/indicatorlibrary.iml" filepath="$PROJECT_DIR$/indicatorlibrary/indicatorlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/push/push.iml" filepath="$PROJECT_DIR$/push/push.iml" />
+    </modules>
+  </component>
+</project>

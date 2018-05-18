@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_award_detial_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_title_height"
+            android:background="@color/color_app_base_color_grey">
+
+                <TextView
+                    android:id="@+id/tv_recharge_title"
+                    style="@style/title_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="晒单"
+                    android:textColor="@color/color_font" />
+
+                <ImageView
+                    android:id="@+id/iv_act_detail_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/share_icon"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_back"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    >
+
+                        <ImageView
+                            android:id="@+id/iv_address_edit_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="12dp"
+                            android:background="#00ffffff"
+                            android:src="@drawable/bt_back" />
+                </LinearLayout>
+        </RelativeLayout>
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_bask_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relative_award_detial_title"
+            android:background="#eeeeee"
+            android:numColumns="2"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            />
+
+
+</RelativeLayout>

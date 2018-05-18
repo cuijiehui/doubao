@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55000000"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="240dp"
+        android:layout_height="280dp"
+        android:src="@drawable/icon_win_record"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_close_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_close"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_marginTop="-20dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="-20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_onnow"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:text="即开抽奖"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/tv_record_bg_shape"
+            />
+
+        <TextView
+            android:id="@+id/tv_raise_draw"
+            android:layout_width="110dp"
+            android:layout_height="33dp"
+            android:text="众筹抽奖"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/tv_record_bg_shape"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:id="@+id/relative_shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height"
+        android:background="@color/app_bottom_color">
+
+        <LinearLayout
+            android:id="@+id/ll_web_back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:id="@+id/iv_web_back"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="#00ffffff"
+                android:src="@drawable/bt_back" />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_shop_title"
+            style="@style/title_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="晟中社区"
+            android:textColor="@color/color_register_edit_background" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_coresun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+
+
+</LinearLayout>

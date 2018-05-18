@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linshi1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_awards_record_image"
+            android:src="@drawable/xian_shi_gou_6s"
+            android:layout_margin="15dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <LinearLayout
+            android:id="@+id/ll_awards_record_txt"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_awards_record_image"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:paddingRight="5dp"
+            android:layout_height="200dp">
+            <TextView
+                android:id="@+id/tv_duobao_record_name"
+                android:text="Apple iPhone 6s (A1700) 64G 金色  移动联通电信4G手机"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <RelativeLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <ImageView
+                    android:id="@+id/iv_duobao_record_add"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:text="参与期号:"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_duobao_record_number"
+                            android:layout_marginLeft="5dp"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:text="12306"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView
+                        android:src="@drawable/jindutiao"
+                        android:layout_weight="1"
+                        android:layout_width="130dp"
+                        android:layout_height="0dp" />
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:text="总需:"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_duobao_record_time"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:layout_marginLeft="3dp"
+                            android:text="5000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="剩余:"
+                            android:layout_marginLeft="10dp"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_duobao_record_time2"
+                            style="@style/awards_record_number_and_time_txt_style"
+                            android:layout_marginLeft="3dp"
+                            android:text="5000"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:text="本期参与:"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_awards_record_attend_num"
+                    android:layout_marginLeft="5dp"
+                    android:text="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/color_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="人次"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/iv_awards_record_state"
+                    android:text="@string/look_for_num"
+                    android:textColor="@color/color_bt_unpressed_color"
+                    android:gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.8"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="5.5"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="获得者:"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_duobao_record_geter_name"
+                        android:layout_marginLeft="5dp"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:text="再不中就报警了"
+                        android:textColor="@color/color_app_base_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="本期参与:"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_duobao_record_attend_num"
+                        android:layout_marginLeft="5dp"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:text="5000"
+                        android:textColor="@color/color_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="人次"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:textColor="@color/color_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="幸运号码:"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_duobao_record_luckey_num"
+                        android:layout_marginLeft="5dp"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:text="200233"
+                        android:textColor="@color/color_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:text="揭晓时间:"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_duobao_record_open_time"
+                        android:layout_marginLeft="5dp"
+                        style="@style/awards_record_number_and_time_txt_style"
+                        android:text="2015-12-30  18:19:32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#7B7979"
+        android:layout_below="@+id/linshi1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+
+</RelativeLayout>

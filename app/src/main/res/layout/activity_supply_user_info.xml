@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--第三方登录的时候补充个人信息-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F2F2F2"
+    tools:context=".ui.activity.RegisterActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_complete_title"
+        android:background="@color/color_text_base"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_recharge_title"
+            android:text="补充完善信息"
+            style="@style/title_style"
+            android:textColor="@color/color_font"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_complete_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_address_edit_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_register_name"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/relative_complete_title"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_name"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="昵   称:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_supply_name"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:singleLine="true"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_register_gender"
+        android:layout_below="@+id/ll_register_name"
+        android:orientation="horizontal"
+        android:background="@color/color_register_edit_background"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_supply_gender"
+            android:textSize="18dp"
+            android:layout_marginLeft="15dp"
+            android:text="性   别:"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/et_supply_gender"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_margin="3dp"
+            android:layout_height="match_parent"
+            />
+        <ImageButton
+            android:id="@+id/ib_supply_man"
+            android:src="@drawable/man1"
+            android:layout_weight="3"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_register_gender_man_shape_pressed"
+            android:layout_width="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:id="@+id/ib_supply_woman"
+            android:src="@drawable/woman1"
+            android:layout_weight="3"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bt_register_gender_woman_shape_unpressed"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_supply_register"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="提交补充信息"
+        android:textSize="18sp"
+        android:textColor="@color/color_font"
+        android:background="@drawable/selector_bt_state_change"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+
+
+
+</RelativeLayout>

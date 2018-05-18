@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/opendoor_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll_top_left"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/app_bottom_color"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_list_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_list_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/col_white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:text="小区申请"
+            />
+
+        <ImageView
+            android:id="@+id/img_setting"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_add"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ex_com_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top_left"
+        android:divider="@null"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_below="@+id/ll_top_left"
+        android:id="@+id/com_app_comtainer"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</RelativeLayout>

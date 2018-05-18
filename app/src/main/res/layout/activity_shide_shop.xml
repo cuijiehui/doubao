@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".shop.activity.ShideShopActivity">
+
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:id="@+id/relative_shop_title"
+        android:layout_width="match_parent"
+        android:background="@color/app_bottom_color"
+        android:layout_height="@dimen/activity_title_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_shop_title"
+            android:text="@string/shop_title_text"
+            style="@style/title_style"
+            android:textColor="@color/color_register_edit_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_main_search"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+    <!--<WebView-->
+        <!--android:id="@+id/web_shide_shop"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/relative_shop_title"-->
+        <!--&gt;</WebView>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/relative_shop_title"
+        android:background="@color/color_font"
+        >
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_shop"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/app_bottom_color"/>
+
+        <LinearLayout
+            android:id="@+id/lin_shop_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_font"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_main_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_main_shopcart"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_shopcart_size"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/iv_main_cart"
+            android:background="@drawable/tv_shopcart_size_shape"
+            android:textColor="#ffffff"
+            android:text="0"
+            android:textSize="9dp"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

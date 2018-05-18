@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/award_progress_bg_shape"
+        >
+
+        <TextView
+            android:id="@+id/tv_progress"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:text="100%"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/tv_progress_bg_shap"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="12dp"
+            />
+
+    <ProgressBar
+        android:id="@+id/dianlog_opening_award_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="30"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_progress"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:progressDrawable="@drawable/award_progressbar"
+        android:background="@null"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

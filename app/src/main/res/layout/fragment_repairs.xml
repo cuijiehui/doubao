@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_repairs_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_bt_state_change_grey">
+
+                    <TextView
+                        android:id="@+id/tv_repairs_name"
+                        style="@style/mine_setting_text_style"
+                        android:layout_marginLeft="20dp"
+                        android:text="姓名"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_repairs_name"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入联系人姓名"
+                        android:maxLength="10"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_repairs_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_bt_state_change_grey">
+
+                    <TextView
+                        android:id="@+id/tv_repairs_phone"
+                        style="@style/mine_setting_text_style"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/img_sale_log"
+                        android:text="联系电话"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/ed_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv_repairs_phone"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入联系电话"
+                        android:maxLength="11"
+                        android:textSize="15dp"
+                        android:singleLine="true"
+                        />
+
+                    <ImageView
+                        style="@style/mine_go_into_style"
+                        android:src="@drawable/go_into_icon" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_feedback_txt"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_below="@+id/rl_feedback_title"
+                android:layout_margin="15dp"
+                android:background="@drawable/et_feedback_background_shape"
+                android:gravity="top"
+                android:hint="请描述你的问题"
+                android:maxLength="140"
+                android:padding="15dp"
+                android:textSize="15dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_addpic_unfocused"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/selector_bt_state_change"
+                android:gravity="center"
+                android:text="确认报修"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

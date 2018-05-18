@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/award_bg_dialog">
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_award_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="确认收货成功"
+            android:textColor="#999999"
+            android:textSize="17dp" />
+
+
+        <TextView
+            android:id="@+id/btn_yes"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:text="确定"
+            android:textColor="#ef5948"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginRight="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/iv_goods_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:gravity="center"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_has_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_has_apply"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="fsfsfsfdsfs"
+            android:textColor="#666666"
+            android:maxLines="2"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lin_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提供"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#666666"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_goods_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_bottom_color"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="份"
+                    android:textColor="#666666"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lin_1"
+                >
+                <TextView
+                    android:id="@+id/tv_apply_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_bottom_color"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人申请"
+                    android:textColor="#666666"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_apply"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/color_font"
+                android:background="@drawable/trial_tv_shape"
+                android:text="免费试用"
+                android:gravity="center"
+                android:layout_alignBottom="@+id/lin_2"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#eeeeee"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

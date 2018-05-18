@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_goods_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="fsfsfsfdsfs"
+            android:textColor="#666666"
+            android:maxLines="2"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_red"
+                android:textSize="22dp"
+                android:text="fdfsfsfsf"
+                android:layout_alignBaseline="@+id/tv_goto_group"
+                 />
+
+            <TextView
+                android:id="@+id/tv_goods_price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_goods_price"
+                android:textColor="#666666"
+                android:layout_marginLeft="5dp"
+                android:text="fdfsfsfsf"
+                android:textSize="11dp"
+                android:layout_alignBaseline="@+id/tv_goto_group"
+                />
+
+            <TextView
+                android:id="@+id/tv_goods_buy_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+                android:layout_toRightOf="@+id/tv_goods_price2"
+                android:layout_alignBaseline="@+id/tv_goto_group"
+                android:layout_marginLeft="10dp"
+                android:textSize="11dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_goto_group"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff"
+                android:background="@drawable/selector_bt_state_change"
+                android:layout_marginRight="10dp"
+                android:text="去开团"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#eeeeee"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

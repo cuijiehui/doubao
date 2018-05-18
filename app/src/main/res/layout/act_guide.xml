@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/act_guide_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56.3dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+
+            <View
+                android:id="@+id/v_dot0"
+                style="@style/guide_dot_style"
+                android:background="@drawable/guide_dot_select" />
+
+            <View
+                android:id="@+id/v_dot1"
+                style="@style/guide_dot_style" />
+
+            <View
+                android:id="@+id/v_dot2"
+                style="@style/guide_dot_style" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_skip"
+            android:layout_width="@dimen/dp145"
+            android:layout_height="@dimen/dp111"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/act_guide_text_selector"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/skip"
+            android:textColor="@drawable/fation_act_text_selector"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_experience"
+        android:layout_width="@dimen/dp422"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/act_guide_text_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/experience"
+        android:textColor="@drawable/fation_act_text_selector2"
+        android:textSize="17dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bt_experience"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="更多精彩等着你......"
+        android:textColor="@color/fashion_bt_text_press"
+        android:textSize="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

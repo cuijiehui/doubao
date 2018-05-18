@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/opendoor_bg"
+	>
+
+    
+    <include layout="@layout/sayee_top"/>
+    
+    <!--<View -->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="5dp"-->
+        <!--android:background="@color/col_ebebeb"/>-->
+    
+    <ListView 
+        android:id="@+id/ls_lock_list"
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white"
+		android:divider="@null"
+		android:layout_centerInParent="true"
+		android:visibility="gone"
+		/>
+
+	<!--<Button-->
+		<!--android:id="@+id/btn_cancel"-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="50dp"-->
+		<!--android:layout_marginTop="15dp"-->
+		<!--android:background="@drawable/award_yes_selector"-->
+		<!--android:textColor="#ffffff"-->
+		<!--android:text="取消"-->
+		<!--android:layout_marginRight="30dp"-->
+		<!--android:layout_marginLeft="30dp"-->
+		<!--android:layout_below="@+id/ls_lock_list"-->
+		<!--/>-->
+
+
+	<ExpandableListView
+		android:id="@+id/ex_lock_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:divider="@null"
+		android:visibility="gone"
+		>
+
+	</ExpandableListView>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/rv_lock_list"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#EFEFF4"
+    android:layout_marginBottom="15dp">
+            
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.01dp"
+	    android:background="#C8C8C8"
+	    android:layout_marginTop="5dp"
+	/>
+	
+	<LinearLayout
+	    android:id="@+id/frag_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" 
+        android:background="#EFEFF4">
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EFEFF4">
+		    <ImageView
+		        android:id="@+id/item_img"
+		        android:layout_width="0dp"
+		        android:layout_height="50dp"
+		        android:layout_weight="0.2"
+		        android:padding="5dp"
+		        android:contentDescription="@string/dev_sn_show"
+		        android:src="@drawable/lock_scaned" 
+		         />
+		   	<TextView
+		        android:id="@+id/item_text"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="0.9"
+		        android:gravity="center"
+		        android:text="@string/dev_sn_show"
+		        android:textSize="14sp"
+		         />
+		</LinearLayout>
+
+   </LinearLayout>
+   <View
+	    android:layout_width="match_parent"
+	    android:layout_height="0.01dp"
+	    android:background="#C8C8C8" 
+	/>
+</LinearLayout>

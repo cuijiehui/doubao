@@ -1,0 +1,286 @@
+<com.xinspace.csevent.sweepstake.view.ScrollViewForTop xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager_publish_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_divider_background"
+                android:clickable="true" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_goods_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_font"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/tv_goods_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_font"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/pdt_lin_back_shape"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/icon_pdt_bg"
+                >
+
+
+                <com.xinspace.csevent.app.view.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_win_user"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/profile"
+                    app:civ_border_color="#ffffff"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/iv_win_user"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_win_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="获奖者"
+                        android:textColor="@color/color_font"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_win_user_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="幸运号码"
+                        android:textColor="@color/color_font"
+                        android:textSize="16dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_win_user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获奖用户id"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_win_noactivity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中奖期号"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_win_rule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计算详情"
+                        android:textSize="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_text_base"
+                        android:background="@drawable/tv_win_rule_shape"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tv_win_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本期参与次数"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_win_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="获奖时间"
+                    android:textSize="16dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_no_sweepstake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您没有参与本期抽奖哦！"
+            android:padding="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/color_font"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rel_old_act"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <TextView
+                    android:id="@+id/tv_old_act"
+                    style="@style/mine_setting_text_style"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_snatch_log"
+                    android:text="往期揭晓" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rel_win_share"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <TextView
+                    android:id="@+id/tv_win_share"
+                    style="@style/mine_setting_text_style"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_snatch_log"
+                    android:text="晒单分享" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#cccccc" />
+
+            <RelativeLayout
+                android:id="@+id/rel_part_record"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_bt_state_change_grey">
+
+                <TextView
+                    android:id="@+id/tv_part_record"
+                    style="@style/mine_setting_text_style"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/img_snatch_log"
+                    android:text="参与记录" />
+
+                <ImageView
+                    style="@style/mine_go_into_style"
+                    android:src="@drawable/go_into_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_push_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="上拉查看图文详情"
+                android:textColor="#cccccc"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+</com.xinspace.csevent.sweepstake.view.ScrollViewForTop>

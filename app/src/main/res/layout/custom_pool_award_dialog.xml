@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/tv_bg_shape"
+        android:layout_height="280dp" />
+    <ImageView
+        android:id="@+id/gift_box"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/qiandao_finish_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp" />
+    <TextView
+        android:id="@+id/tv_congratulation"
+        android:layout_below="@+id/gift_box"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="恭喜您!"
+        />
+    <LinearLayout
+        android:id="@+id/ll_dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_congratulation"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/huojiang_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="80dp"
+            android:textSize="15sp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/dialog_get_text"
+            />
+        <TextView
+            android:id="@+id/tv_get_award_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#E8875C"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginRight="60dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="---"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_dialog_back"
+        android:layout_below="@+id/ll_dialog_text"
+        android:layout_width="140dp"
+        android:padding="10sp"
+        android:background="@drawable/selector_bt_state_change"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/dialog_back"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>

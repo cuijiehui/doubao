@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/award_bg_dialog"
+        >
+
+        <TextView
+            android:id="@+id/tv_award1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#999999"
+            android:textSize="18dp"
+            android:text="重新连接"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/rel_close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_dialog_close"
+                android:layout_centerInParent="true"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_award1"
+            />
+
+        <ImageView
+            android:id="@+id/img_award_icon"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:src="@drawable/icon_reconnect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/tv_award1"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_font">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10">
+        <!--第一个item-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/margin_10">
+                <!--android:background="@drawable/selector_layout_state_change"-->
+                <!--活动图片-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10">
+
+                    <ImageView
+                        android:id="@+id/iv_main_activity_logo"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/loading_icon" />
+
+                    <ImageView
+                        android:id="@+id/iv_hot_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hot_icon"
+                        android:visibility="gone" />
+                </FrameLayout>
+                <!--活动信息-->
+                <TextView
+                    android:id="@+id/tv_main_activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/award_pool_loading_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_15" />
+
+                <!--中奖人数-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中奖人数:"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_main_award_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:text="@string/award_pool_loading_text"
+                        android:textColor="@color/color_text_base"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <!--剩余时间-->
+
+                <RelativeLayout
+                    android:id="@+id/rel_time_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:id="@+id/img_clock1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_clock" />
+
+
+                    <TextView
+                        android:id="@+id/tv_main_time_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_clock1"
+                        android:text="00:00:00"
+                        android:textColor="@color/color_text_base"
+                        android:textSize="@dimen/font_size_15" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_main_activity_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/award_pool_loading_text"
+                    android:textColor="@color/color_app_base_color"
+                    android:textSize="@dimen/font_size_15"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--分割线-->
+        <TextView
+            android:layout_width="@dimen/activity_divider_height_1"
+            android:layout_height="match_parent"
+            android:background="@color/color_gray" />
+
+        <!--第二个item-->
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main_item1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_10"
+                android:visibility="gone">
+                <!--android:background="@drawable/selector_layout_state_change"-->
+                <!--活动图片-->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10">
+
+                    <ImageView
+                        android:id="@+id/iv_main_activity_logo1"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/loading_icon" />
+
+                    <ImageView
+                        android:id="@+id/iv_hot_icon1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/hot_icon"
+                        android:visibility="gone" />
+                </FrameLayout>
+                <!--活动信息-->
+                <TextView
+                    android:id="@+id/tv_main_activity_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/award_pool_loading_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_size_15" />
+
+                <!--中奖人数-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中奖人数:"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tv_main_award_count1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:text="@string/award_pool_loading_text"
+                        android:textColor="@color/color_text_base"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人"
+                        android:textSize="12dp" />
+                </LinearLayout>
+                <!--&lt;!&ndash;剩余时间&ndash;&gt;-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/margin_5"-->
+                <!--android:text="剩余时间:"-->
+                <!--android:textSize="@dimen/font_size_10" />-->
+
+
+                <RelativeLayout
+                    android:id="@+id/rel_time_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:id="@+id/img_clock2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_clock" />
+
+
+                    <TextView
+                        android:id="@+id/tv_main_time_left1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/img_clock2"
+                        android:text="00:00:00"
+                        android:textColor="@color/color_text_base"
+                        android:textSize="@dimen/font_size_15" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_main_activity_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/award_pool_loading_text"
+                    android:textColor="@color/color_app_base_color"
+                    android:textSize="@dimen/font_size_15"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

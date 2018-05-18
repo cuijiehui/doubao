@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".ui.activity.SelectCitiesActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_select_title"
+        android:background="@drawable/main_page_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_recharge_title"
+            android:text="@string/select_cities_title"
+            style="@style/title_style"
+            android:textColor="@color/app_base_text_color_deep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/ll_select_city_back"
+            android:layout_width="48dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_recharge_back"
+                android:background="#00ffffff"
+                android:layout_gravity="center"
+                android:src="@drawable/bt_back"
+                android:layout_marginTop="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_select_current_position"
+        android:background="@color/color_font"
+        android:layout_below="@+id/relative_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_select_guess_position_txt"
+            android:text="猜你当前位置:"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_select_guess_position"
+            android:layout_toRightOf="@+id/tv_select_guess_position_txt"
+            android:text="广东省广州市天河区中山大道西87号"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_select_lock_area"
+        android:layout_marginTop="3dp"
+        android:background="@color/color_font"
+        android:layout_below="@+id/rl_select_current_position"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_select_lock_area_txt"
+            android:text="当前锁定市区:"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_select_lock_area"
+            android:layout_toRightOf="@+id/tv_select_lock_area_txt"
+            android:text="天河区"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_fragment"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rl_select_lock_area"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <sdk_sample.sdk.views.HorizontalListView
+        android:id="@+id/hv_all_try_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        >
+    </sdk_sample.sdk.views.HorizontalListView>
+
+    <ListView
+        android:id="@+id/lv_all_try"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"
+        >
+
+    </ListView>
+
+</LinearLayout>

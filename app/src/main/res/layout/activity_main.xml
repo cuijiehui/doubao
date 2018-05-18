@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.activity.MainActivity">
+
+    <com.xinspace.csevent.ui.widget.NoTouchViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_alphatabs_indicator"/>
+
+    <com.yinglan.alphatabs.AlphaTabsIndicator
+        android:id="@+id/main_alphatabs_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@color/app_bottom_color"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/main_index"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:tabText="首页"
+            app:tabIconNormal="@drawable/icon_home"
+            app:textColorNormal="#ffffff"
+            app:paddingTexwithIcon="2dp"
+            app:textColorSelected="#fff"
+            app:tabIconSelected="@drawable/icon_home_press"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/main_haihang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:tabText="海航"
+            app:tabIconNormal="@drawable/icon_haihang"
+            app:textColorNormal="#ffffff"
+            app:paddingTexwithIcon="2dp"
+            app:textColorSelected="#fff"
+            app:tabIconSelected="@drawable/icon_haihang_press"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/main_coresun"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:tabText="晟中社区"
+            app:textColorSelected="#fff"
+            app:tabIconNormal="@drawable/icon_mine_open"
+            app:textColorNormal="#ffffff"
+            app:paddingTexwithIcon="2dp"
+            app:tabIconSelected="@drawable/icon_mine_open_press"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/main_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:tabText="搜索"
+            app:textColorSelected="#fff"
+            app:tabIconNormal="@drawable/icon_main_search"
+            app:textColorNormal="#ffffff"
+            app:paddingTexwithIcon="2dp"
+            app:tabIconSelected="@drawable/icon_main_search_press"
+            />
+
+        <com.yinglan.alphatabs.AlphaTabView
+            android:id="@+id/main_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+
+            app:tabText="我的"
+            app:textColorSelected="#fff"
+            app:tabIconNormal="@drawable/icon_my"
+            app:textColorNormal="#fff"
+            app:paddingTexwithIcon="2dp"
+            app:tabIconSelected="@drawable/icon_my_press"
+            />
+
+    </com.yinglan.alphatabs.AlphaTabsIndicator>
+
+</RelativeLayout>

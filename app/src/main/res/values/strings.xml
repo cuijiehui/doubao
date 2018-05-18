@@ -1,0 +1,628 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name">拾得</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="community_gz">晟中社区(广州)</string>
+    <string name="community_st">晟中社区(汕头)</string>
+
+    <!-- 下拉刷新自定义view-->
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_loading">刷新中&#8230;</string>
+    <string name="header_hint_refresh_time">更新于：</string>
+    <string name="footer_hint_load_normal">加载更多</string>
+    <string name="footer_hint_load_ready">松开加载更多</string>
+
+    <!-- 自定义对话框的对话框-->
+    <string name="dialog_coin_not_enough">请及时充值积分</string>
+    <string name="dialog_back_to_award">返回继续抽奖</string>
+    <string name="dialog_go_to_charge">前往充值</string>
+    <string name="dialog_award_info">获得了尼康相机奖品</string>
+    <string name="dialog_go_to_get_award">领取奖品</string>
+    <string name="dialog_not_get_award">并没有中奖</string>
+    <string name="dialog_get_text">获得</string>
+    <string name="dialog_get_coin">--积分</string>
+    <string name="dialog_back">返回</string>
+    <string name="dialog_award_opening">开奖中 请耐心等待~</string>
+
+
+    <!-- 首页 -->
+    <string name="main_title_address">广东省广州市越秀区</string>
+    <string name="main_radio_index">首页</string>
+    <string name="main_radio_activity">活动</string>
+    <string name="main_radio_mine">我的</string>
+    <string name="main_tv_new_activity">最新活动</string>
+    <string name="main_tv_qian_dao">签到</string>
+
+
+    <!-- 活动 -->
+    <string name="act_title">活动</string>
+    <string name="act_sort_by_produt">奖品分类</string>
+    <string name="act_sort_by_all">综合排序</string>
+    <string name="act_intput_search">请输入搜索内容</string>
+
+
+    <!-- 商品详情-->
+    <string name="product_detail_title">商品详情</string>
+    <string name="product_introduce_text">商品介绍:</string>
+    <string name="product_view_comment">查看全部评论</string>
+
+
+    <!-- 我的 -->
+    <string name="mine_title">我的</string>
+    <string name="mine_setting_jifen">我的金币</string>
+    <string name="mine_setting_discount">我的资料</string>
+    <string name="mine_setting_address">我的收货地址</string>
+    <string name="mine_setting_act_record">夺宝记录</string>
+    <string name="mine_setting_award_record">中奖记录</string>
+    <string name="mine_setting_show_order">会员中心</string>
+    <string name="mine_setting_about_us">关于我们</string>
+    <string name="mine_setting_exit">退出登录</string>
+    <string name="mine_setting_login">登录</string>
+    <string name="mine_setting_register">注册</string>
+    <string name="mine_login_or_register">注册/登陆</string>
+    <string name="mine_charge_text">充值 / 兑换</string>
+
+    <!-- 发现页面-->
+    <string name="discover_title_text">发现</string>
+
+
+    <!-- 关于我们页面 -->
+    <string name="about_us_title_text">关于我们</string>
+    <string name="about_us_banquan_text">版权信息</string>
+    <string name="about_us_huan_ying_text">欢迎页</string>
+    <string name="about_us_copyright_text">copyright(c)2012-2016</string>
+    <string name="about_us_company_text">广东晟中 版权所有</string>
+
+    <!-- 重新获取地址的页面 -->
+    <string name="reget_address_title">位置信息</string>
+    <string name="reget_address_location_txt">定位</string>
+    <string name="reget_address_my_location_txt">我的位置</string>
+    <string name="reget_address_my_address">定位中...</string>
+    <string name="reget_address_search">搜索</string>
+
+
+    <!-- 登录 -->
+    <string name="login_title">登录</string>
+    <string name="login_login">登录</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_forget_password">忘记密码?</string>
+
+    <!--找回密码-->
+    <string name="find_back_password_title">找回密码</string>
+    <string name="find_back_phone_num">请输入手机号码</string>
+    <string name="find_back_code_num">请输入收到的验证码</string>
+    <string name="find_back_send_code_num">获取验证码</string>
+    <string name="find_back_next_step">下一步</string>
+    <string name="find_reset_password">新密码</string>
+    <string name="find_new_password">新密码:</string>
+    <string name="find_confirm_new_password">确认密码:</string>
+
+
+    <!-- 注册 -->
+    <string name="register_title">注册</string>
+    <string name="register_txt">第三方登录</string>
+    <string name="register_ensure_register">提交</string>
+    <string name="register_request_code">获取验证码</string>
+    <string name="register_nickname_text">请输入昵称</string>
+    <string name="register_password_text">请输入密码(6-20位数字或字母)</string>
+    <string name="register_password_again_text">请再次填写密码</string>
+
+    <!-- 活动详情 -->
+    <string name="award_detail_title">活动详情</string>
+    <string name="activity_detail_title">奖品详情</string>
+    <string name="activity_detail_time_last">剩余时间:</string>
+    <string name="activity_detail_time">-天--小时--分</string>
+    <string name="activity_detail_award_left">剩余奖品:</string>
+    <string name="activity_detail_award_count">已有</string>
+    <string name="activity_detail_award_count1">人获奖</string>
+    <string name="activity_detail_act_title">iPhone6s</string>
+
+    <!-- 领取奖品页面-->
+    <string name="get_award_title">领取奖品</string>
+
+    <!-- 我的地址 -->
+    <string name="manager_address_title">收货地址管理</string>
+    <string name="choose_address_title">选择地址管理</string>
+    <string name="edit_address_edit">确认修改</string>
+    <string name="edit_address_add">新增收货地址</string>
+    <string name="edit_address_name">联&#160;&#160;系&#160;&#160;人</string>
+    <string name="edit_address_relative">关&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;系</string>
+    <string name="edit_address_phone">联系电话</string>
+    <string name="edit_address_address">联系地址</string>
+    <string name="edit_current_address">获取当前位置</string>
+    <string name="title_activity_act_detail">ActDetailActivity</string>
+    <string name="title_activity_reget_address">RegetAddressActivity</string>
+    <string name="title_activity_zoom_in_image">ZoomInImageActivity</string>
+
+    <!--充值-->
+    <string name="recharge_title">充值</string>
+    <string name="recharge_confirm">确认</string>
+
+    <!--选择城市-->
+    <string name="select_cities_title">选择城市</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+
+    <!--小奖品抽奖-->
+    <string name="small_prizes_title">领取奖品</string>
+    <string name="small_prizes_congratulation">恭喜你获得</string>
+
+
+    <!--夺宝记录-->
+    <string name="duobao_record_title">夺宝记录</string>
+    <string name="look_for_num"><u>查看我的号码</u></string>
+    <string name="title_activity_my_coin">MyCoinActivity</string>
+    <string name="title_activity_software_download">SoftwareDownloadActivity</string>
+    <string name="title_activity_award_style">AwardStyleActivity</string>
+
+    <!-- 抽奖类型 -->
+    <string name="award_style_title">抽奖类型</string>
+    <string name="title_activity_award_pool">AwardPoolActivity</string>
+
+    <!-- 抽奖池抽奖页面 -->
+    <string name="award_pool_text">奖品池</string>
+    <string name="award_pool_loading_text">加载中..</string>
+    <string name="award_pool_act_time_text">活动时间:</string>
+
+    <!--商城-->
+    <string name="shop_title_text">拾得折扣商城</string>
+
+    <!--扫二维码添加用户-->
+    <string name="regist_by_rqcode_text">注册社区</string>
+
+    <string name="title_activity_first_use_guide">FirstUseGuideActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="skip">跳过</string>
+    <string name="experience">立即体验</string>
+
+    <string name="et_user_name">请输入用户名</string>
+    <string name="et_user_pwd">请输入密码</string>
+    <string name="account_or_pwd_null">输入的密码和账户不能为空</string>
+    <string name="ensure">确认</string>
+    <string name="add_list_title">添加的设备</string>
+    <string name="dev_sn_show">设备Sn</string>
+    <string name="register">设置WIFI参数</string>
+
+    <string name="total">合计:￥%1$s</string>
+
+    <string name="cp_select_city">选择城市</string>
+    <string name="cp_hot_city">热门城市</string>
+    <string name="cp_located_city">定位城市</string>
+    <string name="cp_hint_search_box">请输入城市名或拼音</string>
+    <string name="cp_nothing_found">没有搜索结果~</string>
+    <string name="cp_locating">正在定位…</string>
+    <string name="cp_located_failed">定位失败</string>
+
+    <!--<string name="push_sender_id">622464153529</string>-->
+
+
+    <!-- 11111111111111111111111111111111111 -->
+    <string name="pref_disable_account">Disable</string>
+    <string name="pref_tunnel">Tunnel</string>
+    <string name="pref_tunnel_host">Hostname</string>
+    <string name="pref_tunnel_port">Port</string>
+    <string name="pref_tunnel_mode">Mode</string>
+    <!--do not change order without changing corresponding entry_values in non_localizable_strings.xml-->
+    <string-array name="tunnel_mode_entries">
+        <item>disabled</item>
+        <item>3G only</item>
+        <item>always</item>
+        <item>auto</item>
+    </string-array>
+    <string name="incall_notif_active">Audio call ongoing</string>
+    <string name="incall_notif_paused">Paused call ongoing</string>
+    <string name="incall_notif_video">Video capturing call ongoing</string>
+    <string name="not_ready_to_make_new_call">Not ready for a new call</string>
+    <string name="bad_target_uri">Bad contact : %s</string>
+    <string name="reset_sas_fmt">Reset verified %s</string>
+    <string name="verify_sas_fmt">Verify %s</string>
+    <string name="communication_encrypted">Encrypted</string>
+    <string name="waiting_for_startup">Starting up…</string>
+    <string name="couldnt_accept_call">An error occurred while accepting call</string>
+    <string name="error_adding_new_call">Error adding new call</string>
+    <string name="transfer_started">Transfer initiated</string>
+    <string name="transfer_dialog_title">Transfer call to</string>
+    <string name="transfer_to_new_call">New call</string>
+    <string name="resume_dialog_title">Resume call</string>
+    <string name="cannot_resume_paused_by_remote_call">Cannot resume call paused by remote</string>
+    <string name="conf_show_details_text">Show details</string>
+    <string name="skipable_error_service_not_ready">Warning: service is not ready</string>
+    <string name="close_button_text">Close</string>
+    <string name="status_conf_call">conf</string>
+    <string name="status_active_call">active</string>
+    <string name="state_paused">paused</string>
+    <string name="state_paused_by_remote">paused by remote</string>
+    <string name="state_streams_running"></string>
+    <string name="state_incoming_received">incoming</string>
+    <string name="state_outgoing_ringing">ringing</string>
+    <string name="state_outgoing_progress">calling</string>
+    <string name="mutemic_button_txt">Mute</string>
+    <string name="speaker_button_txt">Speaker</string>
+    <string name="bluetooth_button_txt">Bluetooth</string>
+    <string name="CancelButtonText">Cancel</string>
+    <string name="AddCallButtonText">Add call</string>
+    <string name="TransferCallButtonText">Transfer call</string>
+    <string name="conf_admin_choice_enter">Enter conference</string>
+    <string name="conf_admin_choice_leave">Momentarily leave conference</string>
+    <string name="conf_admin_choice_terminate">Terminate conference</string>
+    <string name="hangup">Hang up</string>
+    <string name="conf_simple_merge_bt_txt">Merge</string>
+    <string name="conf_simple_transfer_bt_txt">Transfer</string>
+    <string name="conf_simple_video_bt_txt">video</string>
+    <!--<string name="conf_simple_no_current_call">No active call</string>-->
+    <string name="show_send_dtmfs_button">Dialpad</string>
+    <string name="conf_conference">Conference</string>
+    <string name="in_conf">You are part of it</string>
+    <string name="in_conf_leave">Go out</string>
+    <string name="out_conf">You are out of it</string>
+    <string name="out_conf_enter">Go in</string>
+    <string name="pref_audio_hacks_title">Audio hacks</string>
+    <string name="pref_audio_use_specific_mode_title">Use specific mode hack</string>
+    <string name="pref_audio_use_specific_mode_summary">0=MODE_NORMAL (default), 2=MODE_IN_CALL</string>
+    <string name="pref_audio_hacks_use_routing_api_title">Use routing API hack</string>
+    <string name="pref_audio_hacks_use_galaxys_hack_title">Use Galaxy S audio hack</string>
+    <string name="pref_audio_soft_volume_title">Use software volume</string>
+    <string name="pref_ipv6_title">Use ipv6 instead of ipv4</string>
+    <string name="error_while_accepting_pending_call">Error while accepting pending call</string>
+    <string name="incoming_call_dialog_title">%s is calling you</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="unknown_incoming_call_name">Unknown</string>
+    <string name="pref_network_title">Network</string>
+    <string name="pref_transport">Transport</string>
+    <string name="pref_transport_udp">UDP</string>
+    <string name="pref_transport_tcp">TCP</string>
+    <string name="pref_transport_tls">TLS</string>
+    <string name="pref_transport_use_random_ports">Use random ports</string>
+    <string name="pref_sip_port_title">SIP port to use</string>
+    <string name="at_least_a_protocol">At least one item is required</string>
+    <string name="first_launch_ok">Registration successful</string>
+    <string name="error">Error</string>
+    <string name="click_to_show_first_login_view">Start</string>
+    <string name="dialer_null_on_new_intent">Application not ready</string>
+    <string name="pref_add_account">Add account</string>
+    <string name="no_phone_numbers">No phone numbers found for %s</string>
+    <string name="filter_contacts">Filter contacts</string>
+    <string name="title_numbers_dialog">%s\'s phone numbers</string>
+    <string name="pref_delete_account">Delete this account</string>
+    <string name="pref_default_account">Use as default</string>
+    <string name="pref_echo_canceller_calibration">Echo canceller calibration</string>
+    <string name="pref_video_use_front_camera_title">Use front camera</string>
+    <string name="pref_video">Video</string>
+    <string name="pref_preferences">Preferences</string>
+    <string name="pref_video_codecs_title">Codecs</string>
+    <string name="pref_preferred_video_size">Preferred video size</string>
+    <string name="menu_videocall_back_to_dialer_title">Display dialer</string>
+    <string name="menu_videocall_switch_camera_title">Front/Rear Camera</string>
+    <string name="menu_videocall_change_resolution_when_low_resolution">Try High resolution</string>
+    <string name="menu_videocall_change_resolution_when_high_resolution">Low resolution</string>
+    <string name="menu_videocall_change_resolution_title">Change resolution</string>
+    <string name="menu_videocall_toggle_camera_title">Mute/Unmute camera</string>
+    <string name="menu_videocall_toggle_camera_disable">Disable camera</string>
+    <string name="menu_videocall_toggle_camera_enable">Enable camera</string>
+    <string name="menu_videocall_terminate_call_title">Terminate call</string>
+    <string name="pref_video_settings_title">Video settings</string>
+    <string name="pref_video_automatically_share_my_video_title">Share my camera</string>
+    <string name="pref_video_automatically_accept_video_title">Accept incoming video requests</string>
+    <string name="pref_video_automatically_share_my_video">Automatically send my camera</string>
+    <string name="pref_video_automatically_accept_video">Always accept video requests</string>
+    <string name="pref_video_initiate_call_with_video_title">Initiate video calls</string>
+    <string name="pref_video_initiate_call_with_video">Always send video requests</string>
+    <string name="pref_video_enable_title">Enable Video</string>
+    <string name="pref_animation_enable_title">Enable Animations</string>
+    <string name="pref_escape_plus">Replace + by 00</string>
+    <string name="pref_ilbc_summary">iLBC might be unavailable depending on ARM processor and Android OS version.</string>
+    <string name="pref_echo_cancellation">Echo cancellation</string>
+    <string name="pref_autostart">Start at boot time</string>
+    <string name="pref_enable_outbound_proxy">Outbound proxy</string>
+
+    <string name="pref_codecs">Codecs</string>
+    <string name="pref_communication_expire_title">Communication timeout</string>
+    <string name="pref_incoming_expire_title">Incoming call timeout</string>
+    <string name="pref_video_port_title">Video port or port range</string>
+    <string name="pref_audio_port_title">Audio port or port range</string>
+    <string name="pref_video_port_description">Video port or port range (minport-maxport)</string>
+    <string name="pref_audio_port_description">Audio port or port range (minport-maxport)</string>
+    <string name="pref_incoming_call_timeout_title">Incoming call timeout (in seconds)</string>
+    <string name="place_call_chooser">Place a call</string>
+    <string name="pref_adaptive_rate_control">Adaptive rate control</string>
+    <string name="pref_adaptive_rate_algorithm">Adaptive rate algorithm</string>
+    <string name="pref_codec_bitrate_limit">Codec bitrate limit</string>
+    <string-array name="limit_bitrate_entries">
+        <item>10 kbits/s</item>
+        <item>15 kbits/s</item>
+        <item>20 kbits/s</item>
+        <item>36 kbits/s</item>
+        <item>64 kbits/s</item>
+        <item>128 kbits/s</item>
+    </string-array>
+
+    <string name="pref_debug">Debug</string>
+    <string name="about_report_issue">Report issue</string>
+    <string name="about_bugreport_email_text">Describe problem here</string>
+    <string name="about_error_generating_bugreport_attachement">Error generating bug report</string>
+    <string name="about_logs_not_found">Logs not found.</string>
+    <string name="about_reading_logs">Reading logs, may takes time…</string>
+    <string name="about_mailer_chooser_text">Send bug report with…</string>
+    <string name="menu_about">About</string>
+    <string name="menu_send_log">Send log</string>
+    <string name="menu_reset_log">Reset log</string>
+    <string name="pref_audio">Audio</string>
+    <string name="menu_exit">Exit</string>
+    <string name="pref_prefix">Prefix</string>
+    <string name="pref_advanced">Advanced</string>
+    <string name="menu_settings">Settings</string>
+    <string name="pref_proxy">Proxy</string>
+    <string name="pref_domain">Domain*</string>
+    <string name="pref_passwd">Password*</string>
+    <string name="pref_username">Username*</string>
+    <string name="pref_sipaccount">SIP Account</string>
+    <string name="wrong_username">wrong user name</string>
+    <string name="wrong_passwd">wrong password</string>
+    <string name="wrong_domain">Wrong domain</string>
+    <string name="wrong_settings">Wrong settings</string>
+    <string name="tab_dialer">Dialer</string>
+    <string name="tab_contact">Contact</string>
+    <string name="call_error">Cannot call %s</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="cont">Continue</string>
+    <string name="never_remind">Never remind me</string>
+    <string name="config_error">%s, do you want to go to the settings page ?</string>
+    <string name="ec_calibration_launch_message">Starting echo cancelation audio calibration </string>
+    <string name="warning_already_incall">Cannot initiate a new call because a call is already engaged</string>
+    <string name="tab_history">History</string>
+    <string name="warning_wrong_destination_address">Cannot build destination address from [%s]</string>
+    <string name="menu_clear_history">Clear</string>
+    <string name="error_cannot_get_call_parameters">Cannot get call parameters</string>
+    <string name="error_cannot_create_default_parameters">Cannot create default call parameters</string>
+    <string name="error_cannot_invite_address">Cannot invite destination address [%s]</string>
+    <string name="notification_started">started</string>
+    <string name="pref_echo_cancellation_summary">Removes the echo heard by other end</string>
+    <string name="pref_stun_server">Stun server</string>
+    <string name="pref_ice_enable">Enable ICE</string>
+    <string name="pref_ice_enable_summary">A STUN server must be configured to use ICE</string>
+    <string name="ec_calibrating">Calibrating…</string>
+    <string name="ec_calibrated">Calibrated [%s ms]</string>
+    <string name="no_echo">No echo</string>
+    <string name="failed">failed</string>
+    <string name="first_login_explanation">Enter your username and password to connect to the service.</string>
+    <string name="first_login_username">Username</string>
+    <string name="first_login_password">Password</string>
+    <string name="first_login_connect">Connect</string>
+    <string name="first_launch_no_login_password">Please enter your login and password</string>
+    <string name="first_launch_bad_login_password">Couldn\'t connect; check your login and password and start again</string>
+    <string name="pref_amr_summary">AMR codec might not be present on your phone</string>
+    <string name="pref_media_encryption">Media encryption</string>
+    <string name="media_encryption_none">None</string>
+    <string name="pref_video_codec_h264_unavailable">Codec disabled, build the app from source code to enable it</string>
+    <string name="pref_video_codec_mpeg4_unavailable">Codec disabled, build the app from source code to enable it</string>
+    <string name="pref_sipaccounts">SIP Accounts</string>
+    <string name="pref_wifi_only">Use wifi only</string>
+    <string name="pref_push_notification">Enable push notifications</string>
+    <string name="wizard_failed">An error occurred, try again later.</string>
+    <string name="wizard_server_unavailable">Server unreachable, verify your internet connection.</string>
+    <string name="wizard_username_unavailable">This username is already in use.</string>
+    <string name="wizard_username_incorrect">Your username is not valid.</string>
+    <string name="wizard_email_incorrect">Your email is not valid.</string>
+    <string name="wizard_password_incorrect">Your password is not valid (6 characters min).</string>
+    <string name="wizard_passwords_unmatched">Passwords entered are different.</string>
+    <string name="pref_help_proxy">SIP proxy hostname or ip address (optional)</string>
+    <string name="pref_help_outbound_proxy">Route all calls through SIP proxy</string>
+    <string name="pref_help_username">Example: john if your account is john@sip.example.org</string>
+    <string name="pref_help_domain">sip.example.org if your account is john@sip.example.org</string>
+    <string name="pref_help_password">You have to re-enter your password if you edit your username and/or the domain</string>
+    <string name="delete">Delete</string>
+    <string name="chat">Chat</string>
+    <string name="call">Call</string>
+    <string name="add_to_contacts">Add to contacts</string>
+    <string name="status_connected">Registered</string>
+    <string name="status_not_connected">Not Registered</string>
+    <string name="status_in_progress">Registration in progress</string>
+    <string name="status_error">Registration failed</string>
+    <string name="addressHint">Number or address</string>
+    <string name="conference">Conference</string>
+    <string name="incoming">Incoming call</string>
+    <string name="draft">Draft</string>
+    <string name="new_fast_chat">Enter a SIP address to chat with…</string>
+    <string name="no_call_history">No call in your history.</string>
+    <string name="no_missed_call_history">No missed call in your history.</string>
+    <string name="no_contact">No contact in your address book.</string>
+    <string name="no_sip_contact">No SIP contact in your address book.</string>
+    <string name="no_chat_history">No chat history.</string>
+    <string name="call_stats_audio">Audio</string>
+    <string name="call_stats_video">Video</string>
+    <string name="call_stats_codec">Codec:</string>
+    <string name="call_stats_upload">Upload bandwidth:</string>
+    <string name="call_stats_download">Download bandwidth:</string>
+    <string name="call_stats_ice">ICE connectivity:</string>
+    <string name="call_stats_video_resolution">Video size:</string>
+    <!--Used by Android to help blind people by describing them images-->
+    <string name="content_description_add_contact">Add to contacts</string>
+    <string name="content_description_new_contact">New contact</string>
+    <string name="content_description_call">Call</string>
+    <string name="content_description_backspace">Backspace</string>
+    <string name="content_description_about">About page</string>
+    <string name="content_description_chat">Chat</string>
+    <string name="content_description_dial_back">Dial back</string>
+    <string name="content_description_contact_picture">Contact picture</string>
+    <string name="content_description_send_message">Send message</string>
+    <string name="content_description_detail">Detail</string>
+    <string name="content_description_delete">Delete button</string>
+    <string name="content_description_add">Add button</string>
+    <string name="content_description_new_discussion">New discussion</string>
+    <string name="content_description_edit">Edit button</string>
+    <string name="content_description_validate">Validate button</string>
+    <string name="content_description_search">Search</string>
+    <string name="content_description_all_contacts">All contacts</string>
+    <string name="content_description_linphone_contacts">Linphone contacts</string>
+    <string name="content_description_call_direction">Call direction</string>
+    <string name="content_description_all_calls">All calls</string>
+    <string name="content_description_missed_calls">Missed calls</string>
+    <string name="content_description_switch_video">Switch video</string>
+    <string name="content_description_toggle_speaker">Toggle speaker</string>
+    <string name="content_description_toggle_micro">Toggle micro</string>
+    <string name="content_description_add_call">Add call</string>
+    <string name="content_description_pause">Pause</string>
+    <string name="content_description_hang_up">挂断</string>
+    <string name="content_description_numpad">Numpad</string>
+    <string name="content_description_settings">Settings button</string>
+    <string name="content_description_dialer">Dialer</string>
+    <string name="content_description_history">History button</string>
+    <string name="content_description_chat_button">Chat button</string>
+    <string name="content_description_contacts">Contacts button</string>
+    <string name="content_description_led"></string>
+    <string name="content_description_call_quality">Call quality</string>
+    <string name="content_description_encryption">Encryption</string>
+    <string name="content_description_switch_camera">Switch camera</string>
+    <string name="content_description_welcome">Welcome to the account setup assistant</string>
+    <string name="content_description_cancel">Cancel</string>
+    <string name="content_description_cancel_button">Cancel button</string>
+    <string name="content_description_next">Next button</string>
+    <string name="content_description_back">Back button</string>
+    <string name="content_description_setup_ok">Ok</string>
+    <string name="content_description_message_status">Message status</string>
+    <string name="content_description_conference">Conference</string>
+    <string name="content_description_mark"></string>
+    <string name="setup_title">Account Setup Assistant</string>
+    <string name="setup_apply">Apply</string>
+    <string name="setup_password_hint">password</string>
+    <string name="setup_domain_hint">domain</string>
+    <string name="setup_password_confirm_hint">confirm password</string>
+    <string name="setup_email_hint">email</string>
+    <string name="setup_create">Create Account</string>
+    <string name="setup_validate_account">An email has been sent to the address you gave. In order to activate your account, you need to click on the link inside it. Once it is done, come back here and click on the button above.</string>
+    <string name="setup_check_account_validation">Check</string>
+    <string name="setup_account_not_validated">Your account has not been validated yet.</string>
+    <string name="setup_account_validated">Your account has been validated.</string>
+    <string name="button_history">History</string>
+    <string name="button_contacts">Contacts</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_chat">Chat</string>
+    <string name="button_about">About</string>
+    <string name="button_setup_cancel">Cancel</string>
+    <string name="button_setup_back">Back</string>
+    <string name="button_setup_next">Let\'s go</string>
+    <string name="button_new_chat">New conversation</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">Okay</string>
+    <string name="button_back">Back</string>
+    <string name="button_all_contacts">All</string>
+    <string name="button_sip_contacts">SIP</string>
+    <string name="button_add_contact">New contact</string>
+    <string name="button_all_call">All</string>
+    <string name="button_missed_call">Missed</string>
+    <string name="button_delete_all">Delete</string>
+    <string name="button_transfer">Transfer</string>
+    <string name="button_add_call">Add call</string>
+    <string name="button_video">视频</string>
+    <string name="button_micro">麦克风</string>
+    <string name="button_speaker">扬声器</string>
+    <string name="button_route">Route</string>
+    <string name="button_receiver">Receiver</string>
+    <string name="button_bluetooth">Bluetooth</string>
+    <string name="button_options">Options</string>
+    <string name="button_send_message">Send</string>
+    <string name="button_send_picture">Pic</string>
+    <string name="uploading_image">Uploading…</string>
+    <string name="call_update_title">Call update requested</string>
+    <string name="call_update_desc">Your correspondent would like to add video to the current call.</string>
+    <string name="call_update_yes">Accept</string>
+    <string name="call_update_no">Decline</string>
+    <string name="share_picture_size_small">Small</string>
+    <string name="share_picture_size_medium">Medium</string>
+    <string name="share_picture_size_large">Large</string>
+    <string name="share_picture_size_real">Real size</string>
+    <string name="save_picture">Save picture</string>
+    <string name="text_copied_to_clipboard">Text copied to clipboard</string>
+    <string name="copy_text">Copy text</string>
+    <string name="image_picker_title">Select source</string>
+    <string name="image_saved">Image saved</string>
+    <string name="image_not_saved">Error, image not saved</string>
+    <string name="pref_linphone_friend_title">Friends</string>
+    <string name="pref_auto_accept_friends_title">New friends</string>
+    <string name="pref_auto_accept_friends_desc">utomatically accept new friend requests</string>
+    <string name="linphone_friend_new_request_title">Friend request</string>
+    <string name="linphone_friend_new_request_desc">wants to share it\'s presence status with you and be aware of yours.</string>
+    <string name="setup_ec_calibration">Echo canceller calibration in progress</string>
+    <string name="pref_image_sharing_server_title">Sharing server</string>
+    <string name="pref_remote_provisioning_title">Remote provisioning</string>
+    <string name="delete_contact">Delete</string>
+    <string name="delete_contact_dialog">This contact will be deleted.</string>
+    <string name="sip_address">SIP address</string>
+    <string name="phone_number">Phone number</string>
+    <string name="contact_first_name">First name</string>
+    <string name="contact_last_name">Last name</string>
+    <string name="pref_primary_account_title">Primary account</string>
+    <string name="pref_display_name_title">Display name</string>
+    <string name="pref_user_name_title">Username</string>
+    <string name="pref_expire_title">Expire</string>
+    <string name="pref_avpf">AVPF</string>
+    <string name="pref_avpf_rr_interval"> AVPF regular RTCP interval in seconds (between 1 and 5)</string>
+    <string name="pref_rfc2833_dtmf">Send RFC2833 DTMFs</string>
+    <string name="pref_sipinfo_dtmf">Send SIP INFO DTMFs</string>
+    <string name="pref_voice_mail">Voice mail uri</string>
+    <string name="voicemail_unread"> unread messages</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_call_declined">Call declined</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="error_incompatible_media">Incompatible media parameters</string>
+    <string name="error_low_bandwidth">Your correspondent has low bandwidth, video can\'t be started</string>
+    <string name="error_network_unreachable">Network is unreachable</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="call_state_missed">Missed</string>
+    <string name="call_state_outgoing">Outgoing</string>
+    <string name="call_state_incoming">Incoming</string>
+    <string name="pref_background_mode">Background mode</string>
+    <string name="show_image">Show</string>
+    <string name="download_image">Download</string>
+    <string name="download_image_failed">Download failed. Please check your internet access or try again later.</string>
+    <string name="pref_auth_userid">Auth userid</string>
+    <string name="pref_help_auth_userid">Enter authentication userid (optionnal)</string>
+    <string name="pref_display_name">Display name</string>
+    <string name="pref_help_display_name">Enter display name (optionnal)</string>
+    <string name="pref_upnp_enable">Enable UPNP</string>
+    <string name="pref_manage">Manage</string>
+    <string name="wait">Please wait...</string>
+    <string name="importing_messages">Updating messages database</string>
+    <string name="default_account_flag">Default account</string>
+    <string name="setup_remote_provisioning">Download provisioning</string>
+    <string name="setup_remote_provisioning_hint">This assistant will download an existing configuration.</string>
+    <string name="setup_remote_provisioning_url_hint">provisioning url</string>
+    <string name="setup_remote_provisioning_login_hint">The configuration you downloaded doesn\'t include your account. Please fill it in.</string>
+    <string name="setup_confirm_username">Your username will be %s (uppercase characters are not allowed). Do you accept ?</string>
+    <string name="setup_title_assistant">Account setup assistant</string>
+    <string name="zrtp_accept">Accept</string>
+    <string name="zrtp_deny">Deny</string>
+    <string name="zrtp_help">You should only accept if you have the same code (see above) as your correspondent</string>
+    <string name="remote_composing">Remote is writing...</string>
+    <string name="unread_messages">%i unread messages</string>
+    <string name="retry">Retry</string>
+    <string name="remote_provisioning_failure">Failed to download or apply remote provisioning profile...</string>
+    <string name="remote_provisioning_again_title">Remote provisioning</string>
+    <string name="remote_provisioning_again_message">Do you want to change the provisioning URI ?</string>
+    <string name="processing_image">Processing image, can take up to a few seconds depending on the size of the file</string>
+
+
+    <string name="title_activity_expandable">ExpandableActivity</string>
+    <string name="edit">编辑</string>
+    <string name="shop_title">购物车(%s)</string>
+    <string name="count_money">合计：￥%s</string>
+    <string name="count_goods">结算（%s）</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- 二维码提示语 -->
+    <string name="permission_camera">app需要调用相机权限，需要打开设置页面吗?</string>
+    <string name="permission_location">app需要调用定位权限，需要打开设置页面吗?</string>
+    <string name="permission_sdcard">app需要调用sd卡储存权限，需要打开设置页面吗?</string>
+    <string name="unit_add_notice">温馨提示</string>
+    <string name="unit_choose_notice">请选择以下方式添加社区</string>
+
+</resources>

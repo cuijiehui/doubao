@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- 标题栏-->
+    <RelativeLayout
+        android:id="@+id/relative_shop_title"
+        android:layout_width="match_parent"
+        android:background="@color/app_bottom_color"
+        android:layout_height="@dimen/activity_title_height">
+        <TextView
+            android:id="@+id/tv_shop_title"
+            android:text="电信专区"
+            style="@style/title_style"
+            android:textColor="@color/color_register_edit_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/lv_shop_goods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+
+
+</LinearLayout>

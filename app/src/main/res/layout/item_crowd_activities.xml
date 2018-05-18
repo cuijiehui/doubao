@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_font"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_crowd_noactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期号"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_crowd_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抽奖时间"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/iv_win_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_win_user"
+            >
+
+            <TextView
+                android:id="@+id/tv_crowd_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="期号"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_crowd_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="抽奖时间"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:text="我的参与次数:"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_duobao_record_num"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textColor="#ee5848"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="次"
+                    style="@style/awards_record_attend_txt_style"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eeeeee"
+        />
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_dialog_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="15dp"
+    android:background="@drawable/dialog_my_coin_shape"
+    >
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="积分兑换元宝"
+        android:textSize="18sp"
+        android:textColor="@color/color_red"
+
+         />
+    <TextView
+        android:background="@color/color_font_gray"
+        android:layout_marginTop="10dp"
+        android:layout_width="200dp"
+        android:layout_height="1dp" />
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_dialog_my_coin_sum"
+            android:background="@drawable/et_bg_shape"
+            android:hint="数额"
+            android:inputType="number"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/et_dialog_sign"
+            android:layout_toRightOf="@+id/et_dialog_my_coin_sum"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_my_coin_dialog_point"
+            android:layout_toRightOf="@+id/et_dialog_sign"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text=".."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_my_coin_dialog_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_my_coin_dialog_integral"
+            android:layout_toRightOf="@id/tv_my_coin_dialog_gold"
+            android:text="正在获取兑换比率.."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bt_dialog_commit"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_bt_state_change_red"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp" />
+
+
+</LinearLayout>
